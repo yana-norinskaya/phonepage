@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+$var1: #000000
+$var2: #DCE5E2
+
+* 
+	margin: 0
+	font-family: 'Readex Pro', sans-serif
+
+body 
+	width: 1200px
+	margin: 0 auto
+
+li 
+	list-style-type: none
+
+a 
+	text-decoration: none
+	color: $var1
+
+.header 
+	display: flex
+	justify-content: space-between
+	margin-top: 30px
+	&__logo 
+		width: 170px
+		height: 21px
+	
+	&__menu-list 
+		display: flex
+		justify-content: space-between
+	
+	&__menu-item 
+		text-transform: uppercase
+		font-size: 14px
+		margin-left: 20px
+		padding: 5px
+	
+	&__menu-img 
+		cursor: pointer
+	
+	&__frame img 
+		margin-left: 10px
+		padding: 5px
+		cursor: pointer
+	
+
+.main 
+	position: relative
+	background-color: $var2
+	border-radius: 30px
+	display: flex
+	justify-content: space-between
+	margin-top: 50px
+	box-shadow: 10px 5px 5px $var15b
+	z-index: 0
+	&__descr 
+		margin-left: 50px
+		margin-top: 100px
+		&-title 
+			font-size: 50px
+			font-weight: 400
+		
+		&-text 
+			font-size: 16px
+			margin-top: 20px
+		
+	
+	&__line 
+		position: absolute
+		display: inline-block
+		&-bg 
+			width: 200px
+			height: 3px
+			background-color: $var1
+			margin-left: 50px
+		
+	
+	&__explore 
+		display: block
+		width: 170px
+		height: 50px
+		border: $var1 1px solid
+		text-align: center
+		border-radius: 50px
+		margin-top: 50px
+		cursor: pointer
+		&-inner 
+			display: block
+			margin-top: 15px
+		
+	
+	&__img 
+		width: 640px
+	
+	&__line 
+		display: flex
+		justify-content: space-between
+		position: absolute
+		bottom: 20px
+		left: 200px
+		z-index: 2
+	
+
+.prev 
+	position: absolute
+	top: 250px
+	left: 20px
+	width: 14px
+	height: 26px
+	cursor: pointer
+
+.next 
+	position: absolute
+	top: 250px
+	right: 20px
+	width: 14px
+	height: 26px
+	cursor: pointer
+
+.line 
+	width: 40px
+	height: 3px
+	background-color: $var1
+
+.shop 
+	min-height: 1000px
+	&__title 
+		text-align: center
+		font-size: 42px
+		margin-top: 60px
+		font-weight: normal
+	
+	&__text 
+		text-align: center
+		font-size: 14px
+		margin-top: 20px
+	
+
+.wrapper 
+	display: grid
+	grid-template-columns: 570px 300px 300px
+	column-gap: 15px
+	margin-top: 70px
+	align-items: center
+	&__lapstop 
+		box-shadow: 0 0 20px 3px $var167
+		margin-bottom: 50px
+		img 
+			width: 400px
+			margin-left: 60px
+		
+		&-text 
+			margin-right: 20px
+			width: 555px
+			text-align: right
+		
+	
+	&__bold 
+		font-size: 32px
+		font-weight: 400
+	
+	&__name 
+		font-size: 15px
+	
+	&__watch 
+		display: flex
+		justify-content: space-around
+		box-shadow: 0 0 20px 3px $var167
+		&-img 
+			max-width: 381px
+		
+		&-text 
+			margin-top: 90px
+			text-align: right
+			margin-right: 20px
+		
+	
+	&__second, &__third 
+		box-shadow: 0 0 20px 3px $var167
+		align-self: stretch
+	
+	&__second-text 
+		text-align: center
+		margin-top: 20px
+		padding: 20px
+	
+	&__second-img 
+		margin-top: 100px
+		min-width: 300px
+	
+	&__third-text 
+		text-align: center
+		margin-top: 40px
+		padding: 20px
+		margin-bottom: 20px
+	
+	&__third-img 
+		max-width: 300px
+	
+
